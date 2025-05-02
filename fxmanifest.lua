@@ -6,7 +6,7 @@ lua54 'yes'
 
 version '1.0.0'
 
-description 'What Utility Item for fivem thailand community'
+description 'What Utility Item'
 
 
 shared_scripts {
