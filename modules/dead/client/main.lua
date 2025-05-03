@@ -1,7 +1,7 @@
 AddEventHandler('esx:onPlayerDeath', function()
-    LocalPlayer.state:set('iedead', true, true)
+    LocalPlayer.state:set('isdead', true, true)
 end)
 
 AddEventHandler('esx:onPlayerSpawn', function()
-    LocalPlayer.state:set('iedead', false, true)
+    LocalPlayer.state:set('isdead', false, true)
 end)
