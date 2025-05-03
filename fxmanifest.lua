@@ -12,6 +12,7 @@ description 'What Utility Item'
 shared_scripts {
 	'@ox_lib/init.lua',
 	'@es_extended/imports.lua',
+	'share.lua',
 	'modules/**/config/*.lua',
 }
 
