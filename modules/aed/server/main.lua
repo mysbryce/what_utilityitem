@@ -5,8 +5,12 @@ RegisterNetEvent('utilityitem:aed:remove',  function(itemName)
 end)
 
 
-for itemName, _ in pairs(CONFIG_AED) do
+for itemName, itemData in pairs(CONFIG_AED) do
     ESX.RegisterUsableItem(itemName, function(source)
-        TriggerClientEvent('utilityitem:use:aed', source, itemName)
+        if itemData.area then
+            TriggerClientEvent('utilityitem:use:aed:area', source, itemName)
+        else
+            TriggerClientEvent('utilityitem:use:aed', source, itemName)
+        end
     end)
 end

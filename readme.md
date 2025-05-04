@@ -18,6 +18,7 @@ CONFIG_AED = {
         duration = 12000, --Milliseconds 
         health   = 150,   --Add health after revive | 0 - 200
         remove   = false  --Remove item after use | true | false
+        area     = 10.0   --Set this for area revive |
     }
  }
 ```
