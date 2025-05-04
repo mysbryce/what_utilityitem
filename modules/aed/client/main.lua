@@ -1,5 +1,6 @@
 local onRevive = false
 local function UseReviveItem(itemName)
+    if LocalPlayer.state.isdead then return end
     if onRevive then return end
     if not CONFIG_AED[itemName] then return end
 
